@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.samuel.binarylab.expriment</groupId>
+	<artifactId>jsf-on-openshift</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<description>das ist jsf projekt on openshift</description>
+
+	<properties>
+		<!-- Application settings -->
+		<jsf-schfsch.version>0.1.0</jsf-schfsch.version>
+		<!-- Dependency versions -->
+		<javaee-web-api.version>7.0</javaee-web-api.version>
+		<!-- Application wide properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Plugin versions -->
+		<maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+		<versions-maven-plugin.version>2.2</versions-maven-plugin.version>
+	</properties>
+
+	<dependencies>
+		<!-- Java EE Web API -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>${javaee-web-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

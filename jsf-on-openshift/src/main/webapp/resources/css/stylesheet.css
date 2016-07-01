@@ -1,0 +1,219 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #252525;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.header, .footer {
+	background-color: #252525;
+	color: #FFFFFF;
+}
+
+.header {
+	padding: 10px 20px;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.header .logo-image {
+	top: 0;
+	position: relative;
+}
+
+.header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 0;
+	top: 0;
+	position: relative;
+}
+
+.header li {
+	margin: 0 20px 0 0;
+	display: inline;
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+}
+
+.header li.menu-item a {
+	color: #707070;
+	text-decoration: none;
+	padding: 10px 40px 2px 0px;
+	border-bottom: 2px solid #707070;
+}
+
+.header li a.selected {
+	border-bottom-color: #ff0000;
+}
+
+.header li.menu-item a:hover, .header li.menu-item a.selected {
+	color: #ffffff;
+}
+
+.main-menu {
+	position: relative;
+	height: 59px;
+}
+
+.footer {
+	height: 22px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 4px 20px;
+	text-align: center;
+}
+
+.copyright {
+	margin: 0 20px 0 0;
+}
+
+.vertical-centered {
+	vertical-align: middle;
+}
+
+.bottom-aligned {
+	vertical-align: bottom;
+}
+
+.top-aligned {
+	vertical-align: top;
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.centered {
+	text-align: center;
+}
+
+.float-right {
+	float: right;
+	display: inline-block;
+}
+
+.content {
+	padding: 90px 10px 40px 10px;
+}
+
+.no-border, .no-border tr, .no-border td, .no-border .ui-panelgrid-cell
+	{
+	border-width: 0;
+}
+
+.datalist-table thead th, .datalist-table tbody td {
+	text-align: left;
+	padding: 4px 5px;
+}
+
+.datalist-table thead th.control-column, .datalist-table tbody td.control-column
+	{
+	padding: 4px 5px;
+}
+
+.datalist-table thead.ui-datatable-scrollable-theadclone th {
+	padding: 0px 5px;
+}
+
+.datalist-table thead th.control-column button, .datalist-table tbody td.control-column button
+	{
+	height: 22px;
+	width: 22px;
+}
+
+.datalist-table .buttongroup-wrapper {
+	position: relative;
+}
+
+.datalist-table div.button-wrapper {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 4px;
+	width: 22px;
+	height: 22px;
+}
+
+.datalist-table tbody td.wrappable-column {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.masterdata-content .ui-tabs-left>.ui-tabs-nav {
+	width: 200px;
+	height: 100%;
+}
+
+.masterdata-content .ui-tabs.ui-tabs-left>.ui-tabs-nav li a,
+	.masterdata-content .ui-tabs.ui-tabs-right>.ui-tabs-nav li a {
+	width: 168px;
+}
+
+.masterdata-content .ui-tabs-left>.ui-tabs-panels {
+	position: relative;
+	width: auto;
+	height: auto;
+	/* height: 330px; */
+	float: none;
+	margin-left: 200px;
+}
+
+.masterdata-edit-dialog .input-wrapper {
+	margin: 20px;
+}
+
+.buttongroup-wrapper {
+	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.no-picklist-all-buttons .ui-picklist-button-add-all,
+	.no-picklist-all-buttons .ui-picklist-button-remove-all {
+	display: none;
+}
+
+.ui-datatable .ui-datatable-even, .ui-datatable .ui-datatable-odd {
+	background: #fcfcfc;
+}
+
+.ui-datatable .ui-datatable-even:hover, .ui-datatable .ui-datatable-odd:hover {
+	background: #f2f2f2;
+}
+
+.header li .loginWrapper {
+	color: #707070;
+	float: right;
+	border: none;
+	font-size: 0.6em;
+    padding: 5px 30px 0 0;
+}
+
+.header li .loginWrapper a {
+	color: #707070;
+	text-decoration: none;
+}
+
+.header li .loginWrapper a:hover {
+	color: #ffffff;
+}
+

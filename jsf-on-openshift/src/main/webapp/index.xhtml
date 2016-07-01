@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+	<ui:composition template="/WEB-INF/templates/main-template.xhtml">
+		<ui:param name="title" value="Schritt für Schritt" />
+		<ui:define name="content">
+			<br />
+			<br />
+			<br />
+			<div>
+				<h:form>
+					<h:graphicImage url="#{resource['img:Tiger-icon.png']}"
+						alt="Tiger - icon" />
+					<h2>Hallo, mein Name ist Tiger. Wie heißen Sie?</h2>
+					<h:inputText id="username" title="Mein Name ist: "
+						value="#{inquery.name}" required="true"
+						requiredMessage="Error: Ein Name ist erforderlich. a name is required."
+						maxlength="25" />
+					<p></p>
+					<h:commandButton id="submit" value="Submit" action="/WEB-INF/fragments/response">
+						<f:ajax execute="@form"></f:ajax>
+					</h:commandButton>
+					<h:commandButton id="reset" value="Reset" type="reset"></h:commandButton>
+				</h:form>
+			</div>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>
